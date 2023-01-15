@@ -1,5 +1,3 @@
-import * as React from 'react';
-
 export default function App() {
   return (
     <div className="flex flex-col gap-3 items-center">
