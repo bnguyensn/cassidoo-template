@@ -1,12 +1,13 @@
 export interface Outcome {
   id: string;
   chance: number;
+  multiplier: number;
 }
 
 export const outcomes: Outcome[] = [
-  { id: 'Double the money', chance: 0.33 },
-  { id: 'Lose everything', chance: 0.33 },
-  { id: 'Nothing happens', chance: 0.34 },
+  { id: 'Double the money', chance: 0.33, multiplier: 2 },
+  { id: 'Lose everything', chance: 0.33, multiplier: 0 },
+  { id: 'Nothing happens', chance: 0.34, multiplier: 1 },
 ];
 
 export function spinWheel(): Outcome {
