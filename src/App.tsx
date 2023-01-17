@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Input } from './components';
-import { spinWheel } from './utils/wheelSpinner/spinWheel';
+import { spinWheel } from './utils/spinWheel';
 
 let timerId = 0;
 function wait(howLong: number) {
