@@ -11,7 +11,7 @@ function wait(howLong: number) {
 
 const INITIAL_STARTING_MONEY = 1000;
 const INITIAL_BET = 250;
-const WHEEL_SPIN_DELAY = 250; // ms
+const WHEEL_SPIN_DELAY = 500; // ms
 
 enum GAME_STATE {
   NOT_PLAYING = 'NOT_PLAYING',
@@ -145,10 +145,10 @@ export default function App() {
   };
 
   return (
-    <div className="flex flex-col gap-4 items-center max-w-lg w-full mx-auto">
+    <div className="flex flex-col gap-4 items-center max-w-lg w-full mx-auto px-2">
       <h1 className="text-3xl">Spin the Wheel 🎡</h1>
 
-      <p className="text-center">
+      <p className="h-12 text-center">
         <b>GAME:</b> {GAME_TEXT[gameState]}
       </p>
 
